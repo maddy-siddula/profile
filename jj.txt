@@ -1,0 +1,65 @@
+<div id=header-cselogo>
+        <img src=Gsu.png width=170>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <div class="container">
+  <h2>Tabs</h2>
+  <p>The .nav-tabs class is used to create navigation tabs:</p>                  
+  <ul class="nav nav-tabs" role="tablist">
+    <li class="active"><a href="#">Home</a></li>
+    <li><a href="publications.html">Publications</a></li>
+    <li><a href="teaching.html">Teaching</a></li>
+    <li><a href="professional.html">Professional Activities</a></li>        
+  </ul>
+</div>
+
+
+<div id=linkbar>
+<div id=linkbar-titlepart>
+Home
+</div>
+
+<div id=linkbar-links>
+<span class=linkbar_active_block_without_sublinks>Home</span> <b>|</b>
+  <a href=publications.html>Publications</a> <b>|</b> <a href=teaching.html>Teaching</a> <b>|</b> <a href=professional.html> Professional Activities </a>
+</div>
+</div>
+ 
+ 
+<!-- Main part -->
+ 
+<div id=maincontent>
+
+<div class=section> 
+<div class=sechead-line><div class=sechead>Welcome</div></div><br>
+<div class=sectext>
+
+
+I am currently a computer science doctorate student at <a href="http://cs.gsu.edu">Georgia State University</a>. I work with <a href="https://grid.cs.gsu.edu/yli/">Dr. Yingshu Li</a> and <a href="https://grid.cs.gsu.edu/zcai/">Dr. Cai</a> as a part of my doctorate degree.
+I have completed my Masters degree from <a href="http://iiitd.ac.in/">IIIT Delhi </a>, New Delhi under the guidance of <a href="https://sites.google.com/view/somitra">Dr. Somitra Sanadhya </a>. In my masters, I have specialized in security and privacy and worked on a thesis named "Cryptanalysis of digital watermarking using SVM". 
+I have completed my B.S degree from <a href="http://www.osmania.ac.in/">Osmania University</a>, Hyderabad, Andhra Pradesh in 2010. 
+
+
+<br><br>
+My current research interests include Privacy aware computing, social networks, big data and data mining.
+I am currently working on preserving security and privacy in online social media. You can go to news at 
+<a href="http://www.usatoday.com/story/news/nation/2014/03/08/data-online-behavior-research/5781447/">USA Today</a>
+<a href="https://epic.org/privacy/socialnet/">Electronic Privacy Information Center</a> to understand the need for such research.
+
+</div></div>
