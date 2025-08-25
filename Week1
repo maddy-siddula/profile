@@ -1,0 +1,114 @@
+import { Card, CardContent } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import { Lock, Shield, Database, Users } from "lucide-react";
+import { motion } from "framer-motion";
+
+export default function Week1IntroSecurity() {
+  return (
+    <div className="p-8 space-y-8">
+      {/* Slide 1 */}
+      <motion.div initial={{opacity: 0}} animate={{opacity: 1}}>
+        <Card className="bg-blue-600 text-white text-center p-12 rounded-2xl shadow-lg">
+          <h1 className="text-4xl font-bold">Introduction to Information Security</h1>
+          <p className="mt-4 text-xl">COMP 620 – Fall 2025</p>
+          <p className="mt-2">Instructor: Dr. Madhuri Siddula</p>
+        </Card>
+      </motion.div>
+
+      {/* Slide 2 - Learning Objectives */}
+      <Card className="p-8 shadow-md">
+        <h2 className="text-2xl font-semibold mb-4">Learning Objectives</h2>
+        <ul className="list-disc pl-6 space-y-2">
+          <li>Define information security and its goals</li>
+          <li>Understand the CIA triad</li>
+          <li>Recognize categories of threats and attacks</li>
+          <li>Explain the importance of security for society</li>
+        </ul>
+      </Card>
+
+      {/* Slide 3 - What is InfoSec */}
+      <Card className="p-8 shadow-md grid grid-cols-2 gap-6">
+        <div>
+          <h2 className="text-2xl font-semibold mb-4">What is Information Security?</h2>
+          <p>Protection of information systems against unauthorized access, disclosure, modification, or destruction.</p>
+          <ul className="list-disc pl-6 mt-2">
+            <li>Ensures reliability and trust</li>
+            <li>Involves technical, physical, and administrative controls</li>
+          </ul>
+        </div>
+        <div className="flex items-center justify-center">
+          <Shield size={120} className="text-blue-600" />
+        </div>
+      </Card>
+
+      {/* Slide 4 - CIA Triad */}
+      <Card className="p-8 shadow-md text-center">
+        <h2 className="text-2xl font-semibold mb-6">The CIA Triad</h2>
+        <div className="grid grid-cols-3 gap-6">
+          <div className="p-4 border rounded-xl">
+            <Lock size={40} className="mx-auto text-blue-600" />
+            <p className="mt-2 font-semibold">Confidentiality</p>
+            <p className="text-sm">Prevent unauthorized access</p>
+          </div>
+          <div className="p-4 border rounded-xl">
+            <Database size={40} className="mx-auto text-green-600" />
+            <p className="mt-2 font-semibold">Integrity</p>
+            <p className="text-sm">Ensure data accuracy</p>
+          </div>
+          <div className="p-4 border rounded-xl">
+            <Users size={40} className="mx-auto text-red-600" />
+            <p className="mt-2 font-semibold">Availability</p>
+            <p className="text-sm">Accessible when needed</p>
+          </div>
+        </div>
+      </Card>
+
+      {/* Slide 6 - Threat Landscape */}
+      <Card className="p-8 shadow-md">
+        <h2 className="text-2xl font-semibold mb-4">Threat Landscape</h2>
+        <div className="grid grid-cols-2 gap-4">
+          <div className="p-4 border rounded-xl">👤 Human Threats (hackers, insiders)</div>
+          <div className="p-4 border rounded-xl">💻 Technological Threats (malware, ransomware)</div>
+          <div className="p-4 border rounded-xl">🌪️ Environmental Threats (natural disasters)</div>
+          <div className="p-4 border rounded-xl">📧 Social Threats (phishing, engineering)</div>
+        </div>
+      </Card>
+
+      {/* Slide 7 - Real World Examples */}
+      <Card className="p-8 shadow-md">
+        <h2 className="text-2xl font-semibold mb-4">Real-World Examples</h2>
+        <ul className="list-disc pl-6 space-y-2">
+          <li>Equifax Breach (2017) – 147M records exposed</li>
+          <li>Colonial Pipeline Ransomware (2021)</li>
+          <li>Facebook–Cambridge Analytica Scandal</li>
+        </ul>
+      </Card>
+
+      {/* Slide 10 - Interactive Discussion */}
+      <Card className="p-8 shadow-md bg-yellow-50">
+        <h2 className="text-2xl font-semibold mb-4">Interactive Discussion</h2>
+        <p className="mb-2">💡 Think of an online service you use daily (banking, social media, email).</p>
+        <ul className="list-disc pl-6">
+          <li>What security features can you identify?</li>
+          <li>What privacy concerns exist?</li>
+        </ul>
+      </Card>
+
+      {/* Slide 11 - Summary */}
+      <Card className="p-8 shadow-md text-center">
+        <h2 className="text-2xl font-semibold mb-4">Summary</h2>
+        <p className="mb-2">✔ CIA triad is the foundation</p>
+        <p className="mb-2">✔ Multiple threat categories exist</p>
+        <p className="mb-2">✔ Privacy vs Security are distinct but related</p>
+      </Card>
+
+      {/* Slide 12 - Next Class */}
+      <Card className="p-8 shadow-md text-center bg-blue-50">
+        <h2 className="text-2xl font-semibold mb-2">Next Class</h2>
+        <p>Topic: Access Control & Cryptographic Fundamentals</p>
+        <p>Reading: Bishop, Chapters 1–2</p>
+        <Button className="mt-4">Assignment 1 will be posted on Blackboard</Button>
+      </Card>
+    </div>
+  );
+}
